@@ -1,4 +1,4 @@
-//go:build linux && musl && arm64
+//go:build arm64
 
 package go_server_core_binaries_linux_musl
 
@@ -12,10 +12,10 @@ var binaryData []byte
 //go:embed linux_musl_aarch64.so.sig
 var signatureData []byte
 
-func getBinaryData() []byte {
+func GetBinaryData() []byte {
 	return binaryData
 }
 
-func getSignatureData() []byte {
+func GetSignatureData() []byte {
 	return signatureData
 }
